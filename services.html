@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services-RK Group Security</title>
+    <!-- Linking the CSS file for styles -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* style for the header scetion */
+        .header-section{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .header-section img{
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
+        }
+        .header-section h1{
+            font-size: 2em;
+            color: #1f7a1b;
+            text-align: center;
+        }
+        nav 
+        {
+            
+        margin: 30px 0;
+        }
+        nav a {
+                
+        margin: 0 10px;
+        text-decoration: none;
+        color: #7a1b1b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+    <header>
+        <div header class="header-section">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="RK Group Security Logo" style="width:150px;height:auto;">
+        <h1> RK Group Security & Manpower Services.</h1>
+    </header>
+    
+    <h1>Our Services</h1>
+     <!-- Navigation Links -->
+     <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About Us</a> |
+        <a href="/services">Services</a> |
+        <a href="/training">Training</a> |
+        <a href="/contact">Contact Us</a>
+    </nav>
+     <style>
+        body{
+            font-family: Arial, sans-serif,sans-serif;
+            background-color: #b9ebb3;        
+            margin: 0;
+            padding: 20px;
+
+        }
+        h1{
+            text-align: center;
+        }
+        .home page{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .active{
+            background-color: #99ec79;
+        }
+        
+     </style>
+    <section>
+        
+        <h2> Our security services..!</h2>
+        <p>safety of client is our biggest concern. Our safety guard are working day and night to provide the superlative security service to the client. We provide our service to big firms, offices , recidential societies , store, etc. check out the differnt types of services provide by
+           RK group security & manpower services that we have listed below... 
+        </p>
+        <h2>Best Security Agency in Mumbai for Comprehensive Services.</h2>
+        <ul>
+            <!-- Bank Security optio with a link to the bank security page -->
+             <li><a href="/prime house keeping service"> Prime House Keeping service</a></li>
+             <li><a href="/residential security & construction site">Residential Security & Construction Site</a></li>
+             <li><a href="/bank security">Bank Security</a></li>
+             <li><a href="/hotel & stores security">Hotel & Stores Security</a></li>
+             <li><a href="/commerical complex">commerical complex</a></li>
+
+        </ul>
+
+    </section>
+    <div class="textbox-container">
+        <div class="box">
+            <textarea readonly>🏦🛡️
+                Bank Security:-
+    
+             We have a well-built squad of safety guards, who are fine versed in handling diverse kind of weapons to present perfect safety to the bank location.
+            </textarea>
+        </div>
+        <div class="box">
+            <textarea readonly>🏨🛡️
+                Hotel & Stores Security:
+             
+             For retail Stores & Hotel security measures focus on preventing theft and ensuring a safe shopping environment. 
+            </textarea>
+        </div>
+        <div class="box">
+            <textarea readonly>🏢🛡️
+                Commercial Complex:-
+    
+             In commercial safety the instruction is provided as per requirements of the industry, Malls/Commercial Compound, Retail Outlets & Educational organizations, etc.
+            </textarea>
+        </div>
+        <div class="box">
+            <textarea readonly>🧹🧼
+                Housekeeping:-
+    
+             Housekeeping Services is a facility supervision firm promoted by professionals having years of understanding in maintaining huge modern-day amenities.
+            </textarea>
+        </div>
+        <div class="box">
+            <textarea readonly>🏗️🚧
+                Construction Site:
+             
+             Construction sites employ fencing and controlled entry points to prevent unauthorized access, along with ID checks for workers and contractors.
+            </textarea>
+        </div>
+        <div class="box">
+            <textarea readonly>🏡🛡️
+                Residential Security:
+             
+             Residential properties utilize alarm systems and smart home devices, such as cameras and smart locks, to enhance safety and provide remote monitoring.
+            </textarea>
+        </div>
+    </div>
+    
+    <style>
+        .textbox-container {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: center; /* Center the boxes horizontally */
+            flex-wrap: wrap; /* Allows text boxes to wrap to the next line */
+            gap: 20px; /* Space between text boxes */
+            width: 100%;
+            max-width: 900px; /* Max width to prevent the boxes from being too wide */
+            margin: auto; /* Center the container */
+        }
+    
+        .textbox-container .box {
+            background-color: #23e619;
+            display: flex; /* Allows for centering content inside the box */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            flex: 1; /* Make boxes grow equally */
+            min-width: 280px; /* Minimum width for each box */
+            max-width: 300px; /* Optional: limit maximum width for each box */
+        }
+    
+        .textbox-container textarea {
+            width: 100%; /* Fill the box width */
+            height: 200px; /* Fixed height for square boxes */
+            font-family: Arial, sans-serif;
+            white-space: pre-wrap; /* Preserves whitespace and line breaks */
+            overflow: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            resize: none; /* Prevents resizing by the user */
+            border: none; /* Optional: removes border for a cleaner look */
+            border-radius: 5px; /* Matches the box corner rounding */
+            background-color: #7dd87a; /* Optional: white background for the textarea */
+        }
+    </style>
+    
+        
+    <!-- Footer Section -->
+    <footer>
+        <h2>contact</h2>
+        <p>If you have any questions or need further information, please don't hesitate to contact us. We're here to help you with all your security needs.</p>
+        <p>Email: rkgroup786@gmail.com / mk7154704@gmail.com</p>
+        <p>Phone: 9321865862 / 
+                  7558386002
+        </p>
+        <p>Address: BLDG NO.28 ROOM NO.410 SHIVSHAI PARKALP NEAR MANTRI PARK GREGAON EAST MUM.400065 </p>
+
+    </footer>
+</body>
+</html>

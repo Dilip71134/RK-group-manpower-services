@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home-RK Group Security</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* Styles for the header section */
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+        .header-section img {
+            width: 150px;
+            height: auto;
+            margin: 0 20px;
+        }
+        .header-section h1 {
+            font-size: 2em;
+            color: #1f7a1b; /* Adjust the text color as needed */
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b9ebb3;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        nav {
+            
+            margin: 30px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #7a1b1b;
+        }
+        /* Slideshow container */
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            height: auto;
+        }
+        /* Slideshow controls */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 3px;
+            user-select: none; /* Prevent text selection on click */
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .next {
+            right: 0;
+            border-radius: 0 3px 3px 0;
+        }
+        /* Dots for the slideshow */
+        .dot-container {
+            text-align: center;
+            padding: 10px;
+            background: #b5e2aa;
+        }
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active {
+            background-color: #99ec79;
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+    <header>
+        <div class="header-section">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="RK Group Security Logo" />
+            <h1>RK Group Security & Manpower Services</h1>
+        </div>
+    </header>
+    
+    <h1>Home Page</h1>
+    
+    <!-- Navigation Links -->
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/about">About Us</a> |
+        <a href="/services">Services</a> |
+        <a href="/training">Training</a> |
+        <a href="/contact">Contact Us</a>
+    </nav>
+     
+    <h2>Welcome to RK Group Security & Manpower Services..</h2>
+    <p>We are your trusted partner for professional security solutions and skilled manpower. Our team of experienced security personnel is trained to handle a wide range of security challenges, ensuring your safety and peace of mind. We also provide comprehensive training programs to prepare individuals for careers in the security industry.</p>
+
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/slide1.jpg') }}" alt="Slide 1" >
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/slide2.jpg') }}" alt="Slide 2">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/slide3.jpg') }}" alt="Slide 3">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/slide4.jpg') }}" alt="Slide 4">
+        </div>
+        <div class="mySlides">
+            <img src="{{ url_for('static', filename='images/slide5.jpg') }}" alt="Slide 5">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <!-- Dots below the slideshow -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <style>
+        .bank-security-container
+        {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        }
+        .bank-security-container img {
+        width: 400px;
+        height: auto;
+        }
+        .bank-security-container .text {
+        max-width: 65%;
+        }
+    </style>
+    <section class="bank-security-container">
+        <!-- Text content on the left side -->
+        <div class="text">
+            <h2>Best Security Guard Services In Mumbai | Security Guard Services Agency In Mumbai</h2>
+            <p>RK Group Security & Mainpower Service is a built up Security Guard Services in Mumbai. We have an honorable spot in the market to offer the best security benefits in Mumbai. With an extensive experience of 3+ years, our Security Agency in Mumbai is validate and allowed by Govt. of Maharashtra. We encourage you with all kind of security administrations like Bouncers, Female Security Guards, Industrial Safety help, and so on. Commercial Hubs, Real Estate Sites, and Residential Complexes goes under our client list. You can likewise enlist us for shopping malls, ATM, Banks, emergency clinics, individual firms, events.</p>
+            
+            <p>At RK Group Security & Manpower Services, we are dedicated to providing exceptional security solutions and skilled manpower tailored to meet your specific needs. With a proven track record of excellence, our team of highly trained security professionals is committed to ensuring the safety and security of your assets and personnel.</p>
+            <ul>
+              <h3>Why Choose Us..?</h3>
+                <li>Professional Security Solutions: Our security experts are equipped with the latest training and technology to handle a diverse range of security challenges. Whether it's safeguarding your business, home, or special events, we deliver reliable and efficient services.</li>
+                <li>Professional Security Solutions: Our security experts are equipped with the latest training and technology to handle a diverse range of security challenges. Whether it's safeguarding your business, home, or special events, we deliver reliable and efficient services.</li>
+                <li>Skilled Manpower: Our personnel are not only experienced but also continuously trained to stay ahead of industry standards. We provide a range of manpower services including security guards, bodyguards, and specialized personnel to support your operational needs.</li>
+                <li>Customizable Services: We understand that each client has unique requirements. That's why we offer flexible and customizable security solutions to match your specific needs, whether it's for a corporate environment, residential area, or large-scale event.</li>
+              
+              <h3>Our Services..</h3>
+                <li>Corporate Security: Tailored security plans to protect your business premises and assets.</li>
+                <li>Residential Security: Comprehensive solutions to ensure the safety of your home and family.</li>
+                <li>Training Programs: Extensive training for aspiring security professionals.</li>
+                <li>Specialized Manpower: Experienced personnel for various operational roles.</li>
+                <li>Housekeeping: Services is a facility supervision firm promote by professional having years of understanding in maintaining huge modern day amenities.</li>
+                <li>Commercial Security:the instruction is provide as per requirements of the industry, Malls/Commercial Compound, Retail Outlets & Educational organization etc</li>
+              <h3>Get In Touch..</h3>
+                <p>We invite you to explore our website to learn more about our services and how we can assist you. Contact us today to discuss your security needs or to schedule a consultation with one of our experts.</p>
+              
+              <h3>Contact Us..</h3>
+                <li>Name: Mr. Mohammed Ali Khan </li>
+                <li>Phone: 9321865862 / 7558386002</li>
+                <li>Email: rkgroup786@gmail.com / mk7154704@gmail.com </li>
+                <li>Address: BLDG NO.28 ROOM NO.410 SHIVSHAI PARKALP NEAR MANTRI PARK GREGAON EAST MUM.400065</li>
+               
+            </ul>
+            
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/home.jpg') }}" alt="home" style="width:450px;height:780px;">
+        </div>
+    </section>
+
+
+</body>
+</html>

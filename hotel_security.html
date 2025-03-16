@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & store security</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* style for the header section */
+                .header-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 20px;
+                }
+                .header-section img{
+                    width: 150px;
+                    height: auto;
+                    margin: 0 20px;
+                }
+                .header-section h1{
+                    font-size: 2em;
+                    color: #1f7a1b;
+                    text-align: center;
+                }
+                body{
+                    font-family: Arial,sans-serif;
+                    background-color: #b9ebb3;
+                    margin: 1;
+                    padding: 20px;
+                }
+                h1{
+                    text-align: center;
+                }
+                .home page{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ddd;
+                }
+                .bank-security-container {
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   padding: 20px;
+                }
+               .bank-security-container img {
+                  width: 400px;
+                  height: auto;
+                }
+                .bank-security-container .text {
+                 max-width: 60%;
+                }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+     <header>
+     
+     
+        <div header class="header-section"> 
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="RK Group Security Logo" style="width:150px;height:auto;">
+        <h1>RK Group Security & Manpower Services.</h1>
+        </div>
+     </header>
+    <h1>Hotel & Stores Security Services</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/services">Services</a> |
+            <a href="/contact">Contact Us</a>
+        </nav>
+    
+
+    <section class="bank-security-container">
+        <!-- Text content on the left side -->
+        <div class="text">
+            <h2>Hotel Security Responsibilities.</h2>
+            <p>At moshes fine food pvt ltd the safety and security of our guests, staff, and property are our top priorities. As a crucial member of our security team, your role is vital in maintaining a safe and welcoming environment. Below are the key guidelines and responsibilities for our security guards:</p>
+            
+            
+            <ul>
+                <li>Patrol and Surveillance: Conduct regular patrols of the hotel premises, including guest floors, public areas, and parking lots. Monitor security cameras and ensure all areas are secure.</li>
+                <li>Guest Assistance: Provide a visible security presence while assisting guests with any inquiries or concerns they may have. Maintain professionalism and courtesy at all times.</li>
+                <li>Guest Assistance: Provide a visible security presence while assisting guests with any inquiries or concerns they may have. Maintain professionalism and courtesy at all times.</li>
+                <li>Access Control: Monitor and manage access to the hotel, including verifying guest and staff identification and ensuring that only authorized individuals enter restricted areas.</li>
+                <li>Documentation: Maintain accurate records of security incidents, daily activities, and any other relevant information. Submit reports as required.</li>
+            <p>Thank you for your dedication and commitment to maintaining a safe and secure environment at moshes fine food pvt ltd. Your role is essential in providing a positive experience for our guests and ensuring the safety of everyone on the property.
+
+            </p>
+            </ul>
+            <h3>Stores Security Responsibilities.</h3>
+            <p>At Central Sotres the safety and security of our guests, staff, and property are our top priorities. As a crucial member of our security team, your role is vital in maintaining a safe and welcoming environment. Below are the key guidelines and responsibilities for our security guards:</p>
+                <li>Surveillance and Patrols: Regularly patrol the store premises, including sales floors, stockrooms, and parking areas. Monitor security cameras and maintain a visible presence to deter theft and vandalism.</li>
+                <li>Customer Service: Assist customers and staff with inquiries, provide directions, and address any concerns while maintaining a friendly and professional demeanor.</li>
+                <li>Loss Prevention: Observe and report suspicious behavior or potential theft. Work with store management and law enforcement as needed to handle theft-related incidents.</li>
+                <li>Incident Management: Respond promptly to any emergencies or disturbances, including medical emergencies, altercations, or alarms. Follow store protocols for incident management and reporting.</li>
+                <li>Access Control: Monitor access points to the store, including employee areas and stockrooms. Ensure that only authorized personnel are allowed access to restricted areas.</li>
+             
+            <p>Thank you for your dedication and commitment to ensuring a safe and secure environment at central stores. Your role is vital in providing a positive shopping experience for our customers and protecting our store’s assets.</p>
+            <h4>Contact Information</h4>
+            <p>For any questions, concerns, or additional information, please contact Security Manager’s Mr. Mohammed Ali Khan at Contact. 9321865862 / 7558386002 or Email Address. rkgroup786@gmail.com / mk7154704@gmail.com.</p>    
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/hotel.jpg') }}" alt="Bank Security"  style="width:450px;height:450px;">
+            <img src="{{ url_for('static', filename='images/hotel1.jpg') }}" alt="Bank Security" style="width:550px;height:450px;">
+        </div>
+    </section>
+
+    <!-- Add Footer if needed -->
+</body>
+</html>

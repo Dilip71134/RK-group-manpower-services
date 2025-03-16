@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Security Services</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* style for the header section */
+                .header-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 20px;
+                }
+                .header-section img{
+                    width: 150px;
+                    height: auto;
+                    margin: 0 20px;
+                }
+                .header-section h1{
+                    font-size: 2em;
+                    color: #1f7a1b;
+                    text-align: center;
+                }
+                body{
+                    font-family: Arial,sans-serif;
+                    background-color: #b9ebb3;
+                    margin: 1;
+                    padding: 20px;
+                }
+                h1{
+                    text-align: center;
+                }
+                .home page{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ddd;
+                }
+                .bank-security-container {
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   padding: 20px;
+                }
+               .bank-security-container img {
+                  width: 400px;
+                  height: auto;
+                }
+                .bank-security-container .text {
+                 max-width: 65%;
+                }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+     <header>
+     
+     
+        <div header class="header-section"> 
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="RK Group Security Logo" style="width:150px;height:auto;">
+        <h1>RK Group Security & Manpower Services.</h1>
+        </div>
+     </header>
+    <h1>Bank Security Services</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/services">Services</a> |
+            <a href="/contact">Contact Us</a>
+        </nav>
+    
+
+    <section class="bank-security-container">
+      <!-- Text content on the left side -->
+        <div class="text">
+            <h2>Ensuring Maximum Security for Your Bank.</h2>
+            <p>At RK Group Security we specialize in delivering comprehensive security solutions tailored for banks and financial institutions. Our commitment to safeguarding your assets and ensuring smooth operations is paramount..</p>
+            <p>Our bank security solutions include:</p>
+            <ul>
+                <li>24/7 surveillance and monitoring</li>
+                <p>Continuous video surveillance and real-time monitoring to deter and respond to potential threats.</p>
+                <li>Access control systems</li>
+                <p>Advanced systems to manage and restrict access to sensitive areas, ensuring only authorized personnel can enter.</p>
+                <li>Highly trained security guards</li>
+                <p>Professional security personnel trained to handle various situations, providing a visible deterrent and rapid response capability.</p>
+                <li>Emergency response and crisis management</li>
+                <p>Preparedness plans and trained teams ready to respond effectively to any emergencies or crises, minimizing risk and ensuring safety.</p>
+            </ul>
+        </div>
+
+      <!-- Image on the right side -->
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/Bank1.jpg') }}" alt="Bank Security" style="width:300px;height:450px;">
+        </div>
+    </section>
+
+    <!-- Add Footer if needed -->
+</body>
+</html>

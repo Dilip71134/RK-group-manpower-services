@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residential & Construction Security</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* style for the header section */
+                .header-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 20px;
+                }
+                .header-section img{
+                    width: 150px;
+                    height: auto;
+                    margin: 0 20px;
+                }
+                .header-section h1{
+                    font-size: 2em;
+                    color: #1f7a1b;
+                    text-align: center;
+                }
+                body{
+                    font-family: Arial,sans-serif;
+                    background-color: #b9ebb3;
+                    margin: 1;
+                    padding: 20px;
+                }
+                h1{
+                    text-align: center;
+                }
+                .home page{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ddd;
+                }
+                .bank-security-container {
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   padding: 20px;
+                }
+               .bank-security-container img {
+                  width: 400px;
+                  height: auto;
+                }
+                .bank-security-container .text {
+                 max-width: 60%;
+                }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+     <header>
+     
+     
+        <div header class="header-section"> 
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="RK Group Security Logo" style="width:150px;height:auto;">
+        <h1>RK Group Security & Manpower Services.</h1>
+        </div>
+     </header>
+    <h1>Residential Security & Construction Site</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/services">Services</a> |
+            <a href="/contact">Contact Us</a>
+        </nav>
+    
+
+    <section class="bank-security-container">
+        <!-- Text content on the left side -->
+        <div class="text">
+            <h2>Residential Security Services.</h2>
+            <P>At [Your Company Name], we prioritize the safety and security of your home and loved ones. Our comprehensive residential security solutions are designed to provide peace of mind, ensuring that your home is protected around the clock. Explore our services and discover how we can help safeguard your residence.</P>
+            <h3>1. Our Services</h3>
+            <ul>
+                <li>24/7 Monitoring: Our state-of-the-art monitoring system ensures that your home is under constant surveillance. Our team of experts is available 24/7 to respond to any alerts or emergencies.</li>
+                <li>Alarm Systems: We offer a range of advanced alarm systems, including burglar alarms, motion detectors, and glass break sensors. Our systems are designed to detect and deter unauthorized access.</li>
+                <li>Video Surveillance: Our high-definition video surveillance systems provide real-time monitoring and recording. You can view live footage from your smartphone or computer, ensuring you’re always connected to your home.</li>
+                <li>Smart Home Integration: Integrate our security systems with your smart home devices. Control and monitor your security features from anywhere using your smartphone or tablet.</li>
+                <li>Emergency Response: In the event of an emergency, our team will immediately alert local authorities and provide rapid response services to ensure prompt assistance.</li>
+            </ul>
+
+           <h3>2. Benefits of Our Residential Security</h3>
+           <ul>
+              <li>Enhanced Safety: Our security systems provide advanced protection against intrusions, ensuring that your home remains safe from potential threats.</li>
+              <li>Peace of Mind: Enjoy the peace of mind that comes with knowing your home is protected by cutting-edge technology and a dedicated security team.</li>
+              <li>24/7 Protection: With round-the-clock monitoring and support, you can rest assured that your home is secure at all times, even when you’re away.</li>
+              <li>Convenience: Our smart home integration allows you to manage and monitor your security system effortlessly from your mobile devices.</li>
+            </ul>
+            <p>Your safety is our priority. At RK Group we’re committed to providing top-notch security solutions to protect what matters most to you. Let us help you create a safer home today.</p>
+            <h2>Construction Site Security Services.</h2>
+            <p>At RK Group Security we understand the unique security challenges associated with construction sites. Our tailored security solutions are designed to protect your site, assets, and workforce from theft, vandalism, and other security risks. Discover how our expert services can provide the peace of mind you need while you focus on completing your project.</p>
+            <h3>1. Our Services</h3>
+            <ul>
+                <li>24/7 Surveillance: We offer round-the-clock monitoring of your construction site using advanced CCTV systems. Our team ensures continuous observation to detect and deter any suspicious activities.</li>
+                <li>Access Control: Implement robust access control measures, including gate security and ID verification, to ensure that only authorized personnel and vehicles can enter the site.</li>
+                <li>Alarm Systems: Deploy high-tech alarm systems that alert you and local authorities in case of unauthorized access or other security breaches.</li>
+                <li>Mobile Patrols: Regular patrols by trained security personnel provide an additional layer of protection. Our mobile units will perform scheduled and random inspections to maintain a visible security presence.</li>
+                <li>Site Lighting: Ensure the construction site is well-lit during non-working hours. Proper lighting helps to deter potential criminals and provides a safer environment for nighttime operations.</li>
+                <li>Incident Response: Rapid response services are available to address any incidents promptly. Our team will coordinate with local law enforcement and emergency services as needed.</li> 
+            </ul>
+            <p>Protect your construction site with . Our dedicated team is committed to providing comprehensive security solutions tailored to the unique needs of your project. Contact us today to discuss how we can help safeguard your site and ensure the success of your construction endeavors.</p>
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/residendal.jpg') }}" alt="Bank Security" style="width:400px;height:500px";>
+            <img src="{{ url_for('static', filename='images/construction.jpg') }}" alt="Bank Security" style="width:400px;height:500px";>
+        </div>
+        </div>
+    </section>
+
+    <!-- Add Footer if needed -->
+</body>
+</html>

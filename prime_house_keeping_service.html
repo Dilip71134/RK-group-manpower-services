@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Services</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* style for the header section */
+                .header-section{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding: 20px;
+                }
+                .header-section img{
+                    width: 150px;
+                    height: auto;
+                    margin: 0 20px;
+                }
+                .header-section h1{
+                    font-size: 2em;
+                    color: #1f7a1b;
+                    text-align: center;
+                }
+                body{
+                    font-family: Arial,sans-serif;
+                    background-color: #b9ebb3;
+                    margin: 1;
+                    padding: 20px;
+                }
+                h1{
+                    text-align: center;
+                }
+                .home page{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 0;
+                    border-bottom: 1px solid #ddd;
+                }
+                .bank-security-container {
+                   display: flex;
+                   align-items: center;
+                   justify-content: space-between;
+                   padding: 20px;
+                }
+               .bank-security-container img {
+                  width: 400px;
+                  height: auto;
+                }
+                .bank-security-container .text {
+                 max-width: 60%;
+                }
+    </style>
+</head>
+<body>
+    <!-- Logo Section -->
+     <header>
+     
+     
+        <div header class="header-section"> 
+        <img src="{{ url_for('static', filename='images/prime logo.jpg') }}" alt="prime house keeping services Logo" style="width:150px;height:auto;">
+        <h1>Prime House Keeping Services.</h1>
+        </div>
+     </header>
+    <h1> House Keeping Services</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/services">Services</a> |
+            <a href="/contact">Contact Us</a>
+        </nav>
+    
+
+    <section class="bank-security-container">
+        <!-- Text content on the left side -->
+        <div class="text">
+            <h2>Welcome to Our Housekeeping Services</h2>
+            <p>At Accordd clasis we understand the importance of a clean and comfortable environment. Our dedicated housekeeping team is committed to providing exceptional service to ensure your space is always in pristine condition. Below is an overview of the housekeeping services we offer:</p>
+            <h3>1. Our Services</h3>
+            <ul>
+                <li>Daily Cleaning: Comprehensive daily cleaning includes dusting, vacuuming, sweeping, and mopping of all common areas. We also make beds, clean and sanitize bathrooms, and refresh linens and towels.</li>
+                <li>Deep Cleaning: Periodic deep cleaning services are available to address areas that need more intensive care. This includes carpet shampooing, upholstery cleaning, and detailed kitchen and bathroom sanitation.</li>
+                <li>Laundry Services: We offer laundry services for linens, towels, and personal items. Our team ensures that all items are cleaned, pressed, and returned to you promptly.</li>
+                <li>Special Requests: If you have specific cleaning needs or special requests, please let us know. We can accommodate special cleaning schedules or tasks as required.</li>
+            </ul>
+            
+            <h3>2. Our Process</h3>
+            <ul>  
+                <li>Initial Inspection: Our housekeeping staff will conduct an initial inspection to understand the specific needs and preferences for your space.</li>
+                <li>Routine Cleaning: We follow a structured cleaning checklist to ensure consistency and thoroughness in every cleaning session.</li>
+                <li>Quality Assurance: Regular quality checks and feedback mechanisms are in place to maintain high standards of cleanliness and service.</li>
+            </ul>
+            
+            <h3>3. Scheduling and Availability</h3>
+            <ul>
+                <li>Flexible Scheduling: We offer flexible scheduling options to fit your needs. Whether you require daily, weekly, or one-time cleaning services, we can accommodate your preferred schedule.</li>
+                <li>Appointment Booking: To book a housekeeping service, please contact us at [Phone Number] or [Email Address]. Our customer service team will assist you in scheduling and provide any additional information you may need.</li>    
+            </ul>
+            
+            <h3>4. What to Expect</h3>
+            <ul>
+                <li>Professional Staff: Our housekeeping team is composed of trained professionals who adhere to the highest standards of cleanliness and hygiene. They are courteous, respectful, and committed to providing excellent service.</li>
+                <li>Eco-Friendly Products: We use environmentally friendly cleaning products to ensure a safe and healthy environment for you and your family.</li>
+            </ul> 
+           
+            <h3>5. Contact Us</h3>
+            <ul> 
+              <p>For any questions, additional information, or to book a housekeeping service, please reach out to us at:</p>
+                <li>Phone: 9321865862 / 7558386002  </li>
+                <li>Email: rkgroup786@gmail.com / mk7154704@gmail.com</li>
+              <p>Thank you for choosing [Your Company/Hotel Name]. We look forward to providing you with exceptional housekeeping services and ensuring your space remains a clean, comfortable, and enjoyable place.
+
+              </p>  
+            </ul>
+
+        </div>
+
+        <!-- Image on the right side -->
+        <div class="image">
+            <img src="{{ url_for('static', filename='images/prime4.jpg') }}" alt="Bank Security" style="width:450px;height:250px";>
+            <img src="{{ url_for('static', filename='images/prime1.jpg') }}" alt="Bank Security" style="width:450px;height:250px";>
+            <img src="{{ url_for('static', filename='images/prime3.jpg') }}" alt="Bank Security" style="width:450px;height:300px";>
+            
+        </div>
+    </section>
+      
+        <!--image section-->
+        <div style="white-space: nowrap;">
+            <img src="{{ url_for('static', filename='images/prime2.jpg') }}" alt="one 1" style="display:inline; width:25%; height: 35%;">
+            <img src="{{ url_for('static', filename='images/prime5.jpg') }}" alt="two 2" style="display:inline; width:25%; height: 30%;">
+            <img src="{{ url_for('static', filename='images/prime6.jpg') }}" alt="three 3" style="display:inline; width:25%;">
+            <img src="{{ url_for('static', filename='images/prime7.jpg') }}" alt="three 3" style="display:inline; width:25%;">
+        </div>    
+    <!-- Add Footer if needed -->
+</body>
+</html>
